@@ -76,7 +76,7 @@
 	--text-color: hsl(260deg 10% 55%);
 	--card-radius: 3.4vw;
 	--card-width: 25vw;
-	--border-width: 3px;
+	--border-width: 2px;
 	--bg-size: 1;
 	--hue: 0;
 	--hue-speed: 1;
@@ -85,7 +85,7 @@
 	--interaction-speed: 0.55s;
 	--glow-scale: 1.5;
 	--scale-factor: 1;
-	--glow-blur: 6;
+	--glow-blur: 10;
 	--glow-opacity: 1;
 	--glow-radius: 100;
 	--glow-rotate-unit: 1deg;
@@ -123,7 +123,7 @@
 }
 
 .card:hover .inner:before {
-	--bg-size: 15;
+	--bg-size:15;
 	animation-play-state: paused;
 	transition: --bg-size var(--interaction-speed) ease;
 }
@@ -220,7 +220,7 @@
 	content: "";
 	display: block;
 	z-index: -2;
-	filter: blur(calc(var(--glow-blur) * 10px));
+	filter: blur(calc(var(--glow-blur) * 100px));
 	width: 130%;
 	height: 130%;
 	left: -15%;
