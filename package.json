@@ -1,0 +1,13 @@
+{
+  "name": "prajwalan-2024",
+  "version": "1.0.0",
+  "description": "Github Repo for Prajwalan 2025 Techfest for GCOEA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+
+  },
+  "author": "",
+  "license": "ISC"
+}

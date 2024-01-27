@@ -60,6 +60,7 @@ function Hero() {
             animate='show'
             className='flex flex-col space-y-6 items-start'
           >
+          
             {/* Heading */}
             <motion.h1
               variants={childVariants}
@@ -67,6 +68,7 @@ function Hero() {
             >
               WELCOME TO PRAJWALAN
             </motion.h1>
+           
             {/* Paragraph */}
             <motion.p variants={childVariants} className='max-w-lg leading-6'>
             2023-2024 ORGANISED BY GCOEA
