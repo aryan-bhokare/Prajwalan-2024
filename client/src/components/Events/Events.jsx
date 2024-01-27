@@ -13,7 +13,7 @@ function Event() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: true }}
-            className='flex flex-col items-center md:items-start space-y-4'
+            className='flex flex-col items-center space-y-4'
           >
             <motion.h1
               variants={childVariants}
