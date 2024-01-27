@@ -16,12 +16,7 @@ function App() {
         <Route path="/about" element={}/> */}
        </Routes>
       <Hero />
-      {/* <Steps /> */}
-      {/* <BestSellers /> */}
-      {/* <HotProducts /> */}
       <Memories/>
-      {/* <CTA /> */}
-      {/* <Collections /> */}
       <Event />
       <Footer />
     </Router>
