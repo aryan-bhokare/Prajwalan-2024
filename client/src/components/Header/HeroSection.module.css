@@ -1,0 +1,91 @@
+.heroSection {
+    max-width: 100em;
+    padding-left: 5em;
+    padding-right: 5em;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+    user-select: none;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+  }
+  
+  .scrollBack {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+  }
+  
+  .scrollBackBottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scrollP {
+    margin: 0px;
+    margin-top: 4px;
+    text-transform: uppercase;
+    white-space: pre;
+  }
+  
+  .heroScrollTextContainer {
+    color: white;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scrollText 8s linear infinite;
+  }
+  
+
+  @keyframes scrollText  {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  .backgroundImage {
+    z-index: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .backgroundImageI {
+    z-index: 0;
+
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .heroSection {
+      padding: 0px;
+    }
+    .backgroundImageI {
+        z-index: 0;
+         width: auto !important;
+         height:600px !important;
+        object-fit: cover;
+      }
+      
+  }
