@@ -4,8 +4,11 @@ import Event from './components/Events/Events'
 import Footer from './components/Footer/Footer'
 import Memories from './components/Memories/Memories'
 import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Countdown from './components/Countdown/Countdown'
 
 function App() {
+
+  const targetDate=new Date(2024, 1, 28, 12, 0, 0);
   return (
     <>
     <Router>
@@ -15,7 +18,9 @@ function App() {
         {/* <Route path="/" element={}/>        
         <Route path="/about" element={}/> */}
        </Routes>
+      
       <Hero />
+      <Countdown targetDate={targetDate}/>
       <Memories/>
       <Event />
       <Footer />
