@@ -7,7 +7,7 @@ function EventList() {
   return (
     <>
       <motion.div
-        variants={parentVariants}
+        // variants={parentVariants}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true }}
@@ -16,14 +16,14 @@ function EventList() {
         {/* Collection Card  */}
         {blogs.map((blog, idx) => {
           return (
-            <motion.div variants={childVariants} key={idx}>
+            // <motion.div variants={childVariants} key={idx}>
               <EventCard
                 key={blog.title}
                 img={blog.img}
                 title={blog.title}
                 desc={blog.desc}
               />
-            </motion.div>
+            // </motion.div>
           )
         })}
       </motion.div>
