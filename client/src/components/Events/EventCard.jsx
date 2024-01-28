@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function EventCard(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,11 @@ function EventCard(props) {
         className="border-2 border-white p-10 rounded-lg bg-white text-black"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-		style={{ marginTop: !isOpen ? '6em' : '0' ,
-				marginLeft: !isOpen ? '1em' : '0',
-				marginRight: !isOpen ? '1em' : '0'
-		}}
+        style={{
+          marginTop: !isOpen ? '6em' : '0',
+          marginLeft: !isOpen ? '1em' : '0',
+          marginRight: !isOpen ? '1em' : '0'
+        }}
       >
         <motion.h2 className='text-lg font-bold'>
           EventName
@@ -30,14 +32,14 @@ function EventCard(props) {
           initial={false}
           animate={{ height: isOpen ? '' : 0 }}
           transition={{ duration: 0.3 }}
-          style={{ overflow: 'hidden'}}
-		  className={`h-${ isOpen ? '80' : ''}`}
+          style={{ overflow: 'hidden' }}
+          className={`h-${isOpen ? '80' : ''}`}
         >
           <motion.p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime consequuntur doloribus tenetur, deserunt itaque sit eos deleniti dolorum aliquam atque quae inventore pariatur. Repudiandae voluptatum modi a magni sit quidem? 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime consequuntur doloribus tenetur, deserunt itaque sit eos deleniti dolorum aliquam atque quae inventore pariatur. Repudiandae voluptatum modi a magni sit quidem?
           </motion.p>
-		  <button className={styles.btn}>Read More</button>
-        </motion.div>	
+          <Link to="/event"><button className={styles.btn}>Read More</button></Link>
+        </motion.div>
       </motion.div>
     </div>
   );
