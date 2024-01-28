@@ -1,5 +1,5 @@
 .eventPage {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -31,6 +31,7 @@ hr {
 .info {
     width: 60%;
     text-align: justify;
+    padding-right: 20px;
 
 }
 .rules{
@@ -51,12 +52,12 @@ hr {
     }
 }
 
-@media only screen and (max-width:1021px) {
+@media only screen and (max-width:1065px) {
     .eventPage {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 95%;
+        width: 100%;
     }
 
     .eventLogoDiv {
@@ -74,7 +75,8 @@ hr {
 
     .info {
         margin-top: 40px;
-        width: 90%;
+        width: 95%;
+        padding: 0;
     }
 
 
@@ -85,10 +87,10 @@ hr {
     hr {
         display: block;
         /* margin-top: 30px; */
-        width: 90%;
+        width: 100%;
     }
     .rules{
-        width: 80%;
+        width: 95%;
         margin: 20px auto;
     }
 }
