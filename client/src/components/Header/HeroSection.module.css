@@ -1,5 +1,8 @@
 .heroSection {
-    max-width: 100em;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
     padding-left: 5em;
     padding-right: 5em;
     position: relative;

@@ -20,13 +20,8 @@ function App() {
        </Routes>
       
       <Hero />
-      {/* <Steps /> */}
-      {/* <BestSellers /> */}
-      {/* <HotProducts /> */}
       <Countdown targetDate={targetDate}/>
       <Memories/>
-      {/* <CTA /> */}
-      {/* <Collections /> */}
       <Event />
       <Footer />
     </Router>
