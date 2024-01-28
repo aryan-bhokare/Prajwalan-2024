@@ -8,7 +8,7 @@ import Countdown from './components/Countdown/Countdown'
 
 function App() {
 
-  const targetDate=new Date(2024, 1, 28, 12, 0, 0);
+  const targetDate=new Date(2024, 2, 12, 12, 0, 0);
   return (
     <>
     <Router>
