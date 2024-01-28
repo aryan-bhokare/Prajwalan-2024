@@ -116,20 +116,12 @@
   .card:hover>div {
 	mix-blend-mode: darken;
 	--text-color: white;
-<<<<<<< HEAD
 	box-shadow: 0 0 calc(var(--white-shadow) * 1vw) calc(var(--white-shadow) * 0.15vw) rgba(255, 255, 255, 0.2);
 	animation: shadow-pulse calc(var(--animation-speed) * 2) linear infinite;
 }
 
 .card:hover .inner:before {
 	--bg-size:15;
-=======
-	box-shadow: 0 0 0.5vw 0.15vw rgba(255, 255, 255, 0.2);
-  }
-  
-  .card:hover .inner:before {
-	--bg-size: 15;
->>>>>>> 07ec6aa1baf41567192881d8cad3b5ec5a83d362
 	animation-play-state: paused;
 	transition: --bg-size var(--interaction-speed) ease;
   }
