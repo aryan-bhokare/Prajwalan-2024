@@ -77,7 +77,7 @@ function Navbar() {
                   initial='hidden'
                   animate='show'
                   exit='hidden'
-                  className='absolute top-14 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 z-50 w-full px-28 py-8 rounded-lg'
+                  className='absolute top-14 bg-slate-800 z-50 w-full px-28 py-8 rounded-lg'
                 >
                   <motion.div
                     variants={mobileFlexContainer}

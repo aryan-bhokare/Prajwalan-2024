@@ -1,5 +1,5 @@
 import React from 'react'
-import blogs from '../../data/blogs'
+import events from '../../data/eventdata'
 import EventCard from './EventCard'
 import { childVariants, parentVariants } from '../../animations/common'
 import { motion } from 'framer-motion'
@@ -14,14 +14,11 @@ function EventList() {
         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
       >
         {/* Collection Card  */}
-        {blogs.map((blog, idx) => {
+        {events.map((event, idx) => {
           return (
             <motion.div variants={childVariants} key={idx}>
               <EventCard
-                key={blog.title}
-                img={blog.img}
-                title={blog.title}
-                desc={blog.desc}
+                {...event}
               />
             </motion.div>
           )

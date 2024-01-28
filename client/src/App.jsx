@@ -29,10 +29,13 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path='/' element={<><Hero />
+            <Route path='/' element={
+            <><Hero />
               <Countdown targetDate={targetDate} />
               <Memories />
-              <Event /></>} />
+              <Event />
+            </>}
+            />
             <Route path='/event' element={<EventPage/>}/>
           </Routes>
 

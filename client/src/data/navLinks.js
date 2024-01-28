@@ -1,6 +1,6 @@
 const navLinks = [
   'Home',
-  'Events',
+  'Event',
   'Memories',
   'About'
 ]

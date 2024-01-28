@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 function Event() {
   return (
     <>
-      <section className='p-4 pb-24 text-white'>
+      <section id='events' className='p-4 pb-24 text-white'>
         <div className='container mx-auto max-w-6xl'>
           {/* Content */}
           <motion.div
