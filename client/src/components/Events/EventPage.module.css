@@ -1,0 +1,94 @@
+.eventPage {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.eventLogoDiv {
+    display: flex;
+    width: 40%;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.eventLogoDiv img {
+    width: 40%;
+}
+
+.eventLogoDiv h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+hr {
+    display: none;
+}
+
+.info {
+    width: 60%;
+    text-align: justify;
+
+}
+.rules{
+    width: 75%;
+    margin: auto;
+}
+.rules ul{
+    list-style:disc;
+    margin: 10px 30px;
+}
+.rules ul li{
+    margin: 7px 0;
+}
+
+@media only screen and (max-width:1330px){
+    .info{
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width:1021px) {
+    .eventPage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+
+    .eventLogoDiv {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .eventLogoDiv img {
+        width: 35%;
+    }
+    .eventLogoDiv h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .info {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+
+    .b2 {
+        display: block;
+    }
+
+    hr {
+        display: block;
+        /* margin-top: 30px; */
+        width: 90%;
+    }
+    .rules{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
