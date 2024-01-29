@@ -65,23 +65,23 @@ const Countdown = ({ targetDate }) => {
        <div className=' flex flex-col items-center justify-between  mt-8 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] sm:bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900'>
        <link rel="stylesheet" href="https://fonts.google.com/?preview.text=01234567890&classification=Display" />
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></link>
-    <p className='text-xl text-white font-bold mb-12 mt-10 sm:text-3xl sm:mt-4 text-center'>Prajwalan is on the way</p>
-    <div className='flex sm:flex-row justify-center items-center -ml-0 sm:ml-8 p-4 sm:p-32 pb-12 sm:pb-56 rounded-md -mt-14'>
-      <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0 mr-4 sm:mr-8 border-spacing-10 shadow-2xl rounded-[10px]  h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-36 sm:min-w-[150px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+    <p className='text-xl text-white font-bold mb-2 mt-10 sm:text-3xl sm:mt-4 text-center'>Prajwalan is on the way</p>
+    <div className='flex sm:flex-row justify-center items-center -ml-0 sm:ml-8 p-2 sm:p-22 pb-14 sm:pb-36  rounded-md mt-4'>
+      <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0 mr-4 sm:mr-8 border-spacing-10 shadow-2xl rounded-[10px]  h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-32 sm:min-w-[120px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
         <span className='text-gray-200 text-4xl sm:text-6xl mt-[-17px] sm:mt-[-1px] ' style={{ fontFamily: 'Audiowide' }} >{timeLeft.days}</span> 
-        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-1 sm:-ml-2' style={{ fontFamily: 'Trirong' }}>DAYS(s)</div>
+        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-1 sm:-ml-2' style={{ fontFamily: 'Trirong' }}>DAYS</div>
       </div>
-      <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0 mr-4 sm:mr-8 border-spacing-10 shadow-2xl rounded-[10px] h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-36 sm:min-w-[150px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
+      <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0 mr-4 sm:mr-8 border-spacing-10 shadow-2xl rounded-[10px] h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-32 sm:min-w-[120px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
         <span className='text-gray-200 text-4xl sm:text-6xl mt-[-17px] sm:mt-[-1px]' style={{ fontFamily: 'Audiowide' }}>{timeLeft.hours}</span> 
-        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-1'style={{ fontFamily: 'Trirong' }}>HOURS(s)</div>
+        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-1'style={{ fontFamily: 'Trirong' }}>HOURS</div>
       </div>
       <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0 mr-4 sm:mr-8 border-spacing-10 shadow-2xl rounded-[10px] h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-36 sm:min-w-[150px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
         <span className='text-gray-200 text-4xl sm:text-6xl mt-[-17px] sm:mt-[-1px]' style={{ fontFamily: 'Audiowide' }}>{timeLeft.minutes}</span>
-        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-1'style={{ fontFamily: 'Trirong' }}>MINUTES(s)</div>
+        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-1'style={{ fontFamily: 'Trirong' }}>MINUTES</div>
       </div>
       <div className='text-4xl items-center flex flex-col text-center text-white mb-8 sm:mb-0  sm:mr-8 border-spacing-10 shadow-2xl  rounded-[10px] h-14 w-14 p-8 sm:p-12 min-w-[60px] sm:h-36 sm:w-36 sm:min-w-[150px] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black'>
         <span className='text-gray-200 text-4xl sm:text-6xl mt-[-17px] sm:mt-[-1px]' style={{ fontFamily: 'Audiowide' }}>{timeLeft.seconds}</span> 
-        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-0'style={{ fontFamily: 'Trirong' }}>SECONDS(s)</div>
+        <div className='text-xs sm:text-lg font-bold text-white mt-7 sm:mt-16 -ml-0 sm:-ml-0'style={{ fontFamily: 'Trirong' }}>SECONDS</div>
       </div>
     </div>
   </div>

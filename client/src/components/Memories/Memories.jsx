@@ -6,7 +6,7 @@ import { childVariants, parentVariants } from '../../animations/common'
 function Memories(){
     return (
         <>
-       <section id="memories" className='p-4 pb-24 text-white'>
+       <section id="memories" className='p-4 sm:pb-24 text-white'>
         <div className='container mx-auto max-w-6xl'>
           {/* Content */}
           <motion.div
