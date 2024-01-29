@@ -20,6 +20,7 @@ function Intro() {
         {/* Logo */}
         <div className='flex items-center space-x-2'>
           <AiOutlineRadarChart size={35} />
+          
           <h3 className='text-lg font-bold uppercase'>Prajwalan.</h3>
         </div>
         {/* Intro */}
