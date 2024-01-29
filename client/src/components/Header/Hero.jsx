@@ -38,6 +38,7 @@ const Hero = () => {
   }
 
   return (
+    <section id="#">
     <motion.div className={styles.heroSection} variants={parentVariants} initial="hidden" animate="show">
       <div className={styles.imageContainer}>
         <motion.div className={styles.backgroundImage} variants={parentVariants}>
@@ -74,6 +75,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </motion.div>
+    </section>
   );
 };
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoClose } from 'react-icons/io5'
-import navLinks from '../../data/navLinks'
+import { Link } from 'react-router-dom'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion, AnimatePresence } from 'framer-motion'
 import { parentVariants, childVariants } from '../../animations/common'
 import {
@@ -47,13 +48,10 @@ function Navbar() {
               variants={childVariants}
               className='hidden lg:flex space-x-6 text-sm items-center'
             >
-              {navLinks.map((link, idx) => {
-                return (
-                  <a key={idx} href='#' className={styles.navLink}>
-                    {link}
-                  </a>
-                )
-              })}
+             <AnchorLink href='#' className={styles.navLink}>Home</AnchorLink>
+             <AnchorLink href='#events' className={styles.navLink}>Events</AnchorLink>
+             <AnchorLink href='#memories' className={styles.navLink}>Memories</AnchorLink>
+             <AnchorLink href='#' className={styles.navLink}>About</AnchorLink>
 
               {/* <button className={styles.btn}>Register</button> */}
             </motion.div>
@@ -82,19 +80,11 @@ function Navbar() {
                   <motion.div
                     variants={mobileFlexContainer}
                     className='flex flex-col items-center space-y-6 '
-                  >
-                    {navLinks.map((link, idx) => {
-                      return (
-                        <motion.a
-                          variants={mobileLinkVariants}
-                          key={idx}
-                          href='#'
-                          className={styles.mobileNavLink}
-                        >
-                          {link}
-                        </motion.a>
-                      )
-                    })}
+                  > 
+                    <AnchorLink href='#events' className={styles.mobileNavLink}>Events</AnchorLink>
+                    <AnchorLink href='#home' className={styles.mobileNavLink}>Home</AnchorLink>
+                    <AnchorLink href='#memories' className={styles.mobileNavLink}>Memories</AnchorLink>
+                    <AnchorLink href='#home' className={styles.mobileNavLink}>About</AnchorLink>
                   </motion.div>
                 </motion.div>
               )}
