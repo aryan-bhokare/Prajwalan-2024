@@ -10,12 +10,16 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.8",
     "framer-motion": "^7.2.1",
     "hover-carousel": "^1.1.0",
     "react": "^18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.12.0",
     "react-router-dom": "^6.21.3",
+    "react-router-hash-link": "^2.4.3",
+    "react-scroll": "^1.9.0",
     "swiper": "^8.3.2"
   },
   "devDependencies": {

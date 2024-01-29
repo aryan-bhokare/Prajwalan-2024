@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 function Event() {
   return (
     <>
-      <section className='p-4 pb-24 text-white'>
+      <section id='events' className='p-4 pb-24 text-white'>
         <div className='container mx-auto max-w-6xl'>
           {/* Content */}
           <motion.div
@@ -23,7 +23,7 @@ function Event() {
             </motion.h1>
             <motion.h1
               variants={childVariants}
-              className='text-slate-400 text-xl md:text-2xl font-thin pt-2'
+              className='text-slate-400 text-xl md:text-2xl font-thin pt-2 pl-14'
             >
             List of Events we are conducting this year.
             </motion.h1>

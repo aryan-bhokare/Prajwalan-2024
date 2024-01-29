@@ -6,7 +6,7 @@ import { childVariants, parentVariants } from '../../animations/common'
 function Memories(){
     return (
         <>
-       <section className='p-4 pb-24 text-white'>
+       <section id="memories" className='p-4 sm:pb-24 text-white'>
         <div className='container mx-auto max-w-6xl'>
           {/* Content */}
           <motion.div
@@ -14,7 +14,7 @@ function Memories(){
             initial='hidden'
             whileInView='show'
             viewport={{ once: true }}
-            className='flex flex-col items-center space-y-4 pb-14'
+            className='flex flex-col items-center  space-y-4 pb-14'
           >
             <motion.h1
               variants={childVariants}
@@ -29,7 +29,9 @@ function Memories(){
               Memories of past Prajwalan.
             </motion.p>
           </motion.div>
+          <div className="flex justify-center">
           <MyImageCarousel />
+          </div>
         </div>
       </section>
         </>
