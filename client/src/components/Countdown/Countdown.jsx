@@ -61,8 +61,7 @@ const Countdown = ({ targetDate }) => {
 
   return (
     
- <body className='min-h-full'>
-       <div className=' flex flex-col items-center justify-between  mt-8 bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] sm:bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900'>
+    <div className=' flex flex-col items-center justify-between  mt-8 bg-transparent sm:bg-transparent'>
        <link rel="stylesheet" href="https://fonts.google.com/?preview.text=01234567890&classification=Display" />
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></link>
     <p className='text-xl text-white font-bold mb-2 mt-10 sm:text-3xl sm:mt-4 text-center'>Prajwalan is on the way</p>
@@ -85,7 +84,6 @@ const Countdown = ({ targetDate }) => {
       </div>
     </div>
   </div>
- </body>
   );
 };
 

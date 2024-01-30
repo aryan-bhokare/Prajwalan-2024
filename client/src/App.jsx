@@ -10,7 +10,7 @@ import Spinner from './components/Spinner';
 import EventPage from './components/Events/EventPage';
 import BestSellers from './components/BestSellers/BestSellers';
 import Sponsor from './components/Sponsors/Sponsor';
-
+import Background from '../src/assets/bgm.jpg';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -29,20 +29,35 @@ function App() {
         <Spinner />
       ) : (
         <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={
-            <><Hero />
-              <Countdown targetDate={targetDate} />
-              <Sponsor/>
-              <Memories />
-              <Event />
-            </>}
-            />
-            <Route path='/event' element={<EventPage/>}/>
-          </Routes>
-          <BestSellers/>
-          <Footer />
+          <div className="relative h-screen overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center w-full h-full sm:w-full sm:h-full "
+              style={{ backgroundImage: `url(${Background})` }}
+            >
+             
+            </div>
+            <div className="relative z-10 h-full overflow-y-auto">
+          
+              <Navbar />
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Hero />
+                      <Countdown targetDate={targetDate} />
+                      <Sponsor />
+                      <Memories />
+                      <Event />
+                    </>
+                  }
+                />
+                <Route path="/event" element={<EventPage />} />
+              </Routes>
+              <BestSellers />
+              <Footer />
+            </div>
+          </div>
         </BrowserRouter>
       )}
     </>
