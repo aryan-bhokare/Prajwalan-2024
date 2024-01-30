@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Countdown from './components/Countdown/Countdown'
 import Spinner from './components/Spinner';
 import EventPage from './components/Events/EventPage';
+import BestSellers from './components/BestSellers/BestSellers';
+import Sponsor from './components/Sponsors/Sponsor';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,13 +34,14 @@ function App() {
             <Route path='/' element={
             <><Hero />
               <Countdown targetDate={targetDate} />
+              <Sponsor/>
               <Memories />
               <Event />
             </>}
             />
             <Route path='/event' element={<EventPage/>}/>
           </Routes>
-
+          <BestSellers/>
           <Footer />
         </BrowserRouter>
       )}
