@@ -39,11 +39,7 @@ function Intro() {
             <AiFillLinkedin />
           </div>
         </a> 
-        <a href="https://github.com/aryan-bhokare/Prajwalan-2024" target="_blank" rel="noopener noreferrer">
-        <div className={styles.socialIcon}>
-            <AiFillGithub />
-          </div>
-        </a> 
+        
 
           
           
