@@ -22,7 +22,7 @@ function AvatarSlider() {
       variants={parentVariants}
       initial='hidden'
       whileInView='show'
-      className='text-white h-full max-w-6xl container '
+      className='text-white h-full max-w-6xl container  '
     >
       <Swiper
         slidesPerView={5}
@@ -59,7 +59,7 @@ function AvatarSlider() {
           return (
             <SwiperSlide key={user.name}>
               <motion.div variants={childVariants}>
-                <AvatarCard
+                <AvatarCard 
                   img={user.img}
                   name={user.name}
                   handle={user.handle}

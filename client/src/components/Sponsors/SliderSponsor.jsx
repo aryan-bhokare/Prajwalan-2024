@@ -1,28 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 // Import required modules
-import { Autoplay, Pagination } from 'swiper'
-
+import { Autoplay, Pagination } from 'swiper';
 // Avatar
-import AvatarCard from './SponsorCard'
-import users from '../../data/users'
-
+import AvatarCard from './SponsorCard';
+import users from '../../data/users';
 // Framer Motion
-import { childVariants, parentVariants } from '../../animations/common'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 function SliderSponsor() {
+  const [hasEnteredView, setHasEnteredView] = useState(false);
+
+  const handleInView = () => {
+    if (!hasEnteredView) {
+      setHasEnteredView(true);
+    }
+  };
+
   return (
     <motion.div
-      variants={parentVariants}
       initial='hidden'
-      whileInView='show'
-      className='text-white h-full max-w-6xl container '
+      animate={hasEnteredView ? 'show' : 'hidden'}
+      variants={{
+        hidden: { opacity: 0 },
+        show: { opacity: 1 },
+      }}
+      className='text-white h-full max-w-6xl container'
+      onAnimationComplete={handleInView}
     >
       <Swiper
         slidesPerView={5}
@@ -58,20 +67,18 @@ function SliderSponsor() {
         {users.map((user, idx) => {
           return (
             <SwiperSlide key={user.name}>
-              <motion.div variants={childVariants}>
-                <AvatarCard
-                  img={user.img}
-                  name={user.name}
-                  handle={user.handle}
-                  gradient={user.gradient}
-                />
-              </motion.div>
+              <AvatarCard
+                img={user.img}
+                name={user.name}
+                handle={user.handle}
+                gradient={user.gradient}
+              />
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </motion.div>
-  )
+  );
 }
 
 export default SliderSponsor;

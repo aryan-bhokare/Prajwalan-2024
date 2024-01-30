@@ -18,7 +18,7 @@ function EventCard(props) {
   };
 
   return (
-    <div className={`card-container w-80 bg-slate-800 rounded-lg h-80 text-center overflow-hidden`}>
+    <div className={`card-container w-80 rounded-lg h-80 text-center overflow-hidden  backdrop-blur-sm bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,0%,60%,0)], bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,3%,93%,0.2)]`}>
       <motion.div
         onClick={() => setIsOpen(!isOpen)}
         layout
