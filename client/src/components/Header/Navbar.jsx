@@ -51,8 +51,8 @@ function Navbar() {
              <AnchorLink href='#' className={styles.navLink}>Home</AnchorLink>
              <AnchorLink href='#events' className={styles.navLink}>Events</AnchorLink>
              <AnchorLink href='#memories' className={styles.navLink}>Memories</AnchorLink>
-             <AnchorLink href='#' className={styles.navLink}>About</AnchorLink>
-
+             <AnchorLink href='#sponsors' className={styles.navLink}>Sponsors</AnchorLink>
+             <AnchorLink href='#' className={styles.navLink}>About us</AnchorLink>
               {/* <button className={styles.btn}>Register</button> */}
             </motion.div>
             {/* Hamburger Menu */}
@@ -80,11 +80,12 @@ function Navbar() {
                   <motion.div
                     variants={mobileFlexContainer}
                     className='flex flex-col items-center space-y-6 '
-                  > 
-                    <AnchorLink href='#events' className={styles.mobileNavLink}>Events</AnchorLink>
+                  >  
                     <AnchorLink href='#home' className={styles.mobileNavLink}>Home</AnchorLink>
+                    <AnchorLink href='#events' className={styles.mobileNavLink}>Events</AnchorLink>
                     <AnchorLink href='#memories' className={styles.mobileNavLink}>Memories</AnchorLink>
-                    <AnchorLink href='#home' className={styles.mobileNavLink}>About</AnchorLink>
+                    <AnchorLink href='#sponsors' className={styles.mobileNavLink}>Sponsors</AnchorLink>
+                    <AnchorLink href='#' className={styles.mobileNavLink}>About us</AnchorLink>
                   </motion.div>
                 </motion.div>
               )}
