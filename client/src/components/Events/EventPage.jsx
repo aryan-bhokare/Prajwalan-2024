@@ -12,8 +12,8 @@ function EventPage(props) {
 
     console.log(eventDetails);
     return (
-        <div style={{width:"90%",margin:"20px auto",padding:"10px 20px",borderRadius:"15px",backgroundColor:"#e4d7f91f"}}>
-            <div className='my-5'>
+        <div className="w-90 sm:mx-10 mx-6 my-20 px-20 py-10 rounded-lg backdrop-blur-sm bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,0%,60%,0)], bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,3%,93%,0.2)]">
+            <div className='my-5 '>
                 <div className={styles.eventPage}>
                     <div className={styles.eventLogoDiv}>
                         <img src={demo} className='pt-4' alt="..." />

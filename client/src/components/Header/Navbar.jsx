@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoClose } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion, AnimatePresence } from 'framer-motion'
 import { parentVariants, childVariants } from '../../animations/common'
@@ -48,7 +48,7 @@ function Navbar() {
               variants={childVariants}
               className='hidden lg:flex space-x-6 text-sm items-center'
             >
-             <AnchorLink href='#' className={styles.navLink}>Home</AnchorLink>
+             <NavLink to='/'>Home</NavLink>
              <AnchorLink href='#events' className={styles.navLink}>Events</AnchorLink>
              <AnchorLink href='#memories' className={styles.navLink}>Memories</AnchorLink>
              <AnchorLink href='#sponsors' className={styles.navLink}>Sponsors</AnchorLink>

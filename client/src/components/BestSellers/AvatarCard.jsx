@@ -4,7 +4,7 @@ function AvatarCard({ img, name, handle, gradient }) {
   return (
     <>
       {' '}
-      <div className='w-full md:w-52  rounded-lg overflow-hidden border border-slate-400/10 pb-6 hover:shadow-xl duration-500 ease-in-out hover:shadow-white/5'>
+      <div className='w-full md:w-52  rounded-lg overflow-hidden border border-slate-400/10 pb-6 hover:shadow-xl duration-500 ease-in-out hover:shadow-white/5  backdrop-blur-sm bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,0%,60%,0)], bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,3%,93%,0.2)]'>
         <div className='flex flex-col  '>
           {/* Gradient */}
           <div className={`h-24 ${gradient}`}></div>
