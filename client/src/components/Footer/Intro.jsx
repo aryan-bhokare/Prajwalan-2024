@@ -28,22 +28,26 @@ function Intro() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, incidunt deleniti ex aliquam nam maxime ducimus perspiciatis veniam quam ab recusandae unde facere vitae reprehenderit exercitationem magnam numquam porro dolorem! 
         </p>
         {/* Social Icons */}
-        <div className='flex space-x-2'>
+        <div className='flex space-x-2 cursor-pointer'>
+        <a href="https://www.instagram.com/prajwalan.techfest/?hl=en" target="_blank" rel="noopener noreferrer">
           <div className={styles.socialIcon}>
             <AiOutlineInstagram />
-          </div>
-          <div className={styles.socialIcon}>
+           </div>
+        </a>
+        <a href="https://www.linkedin.com/company/prajwalan22/" target="_blank" rel="noopener noreferrer">
+        <div className={styles.socialIcon}>
             <AiFillLinkedin />
           </div>
-          <div className={styles.socialIcon}>
-            <AiOutlineTwitter />
-          </div>
-          <div className={styles.socialIcon}>
+        </a> 
+        <a href="https://github.com/aryan-bhokare/Prajwalan-2024" target="_blank" rel="noopener noreferrer">
+        <div className={styles.socialIcon}>
             <AiFillGithub />
           </div>
-          <div className={styles.socialIcon}>
-            <SiHashnode />
-          </div>
+        </a> 
+
+          
+          
+         
         </div>
       </div>
     </>
