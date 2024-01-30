@@ -15,7 +15,7 @@ function BestSellers() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: true }}
-            className='flex flex-col items-center  space-y-5'
+            className='flex flex-col items-center  space-y-5  '
           >
             {/* Content */}
             <motion.h1

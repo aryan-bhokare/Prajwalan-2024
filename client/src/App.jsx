@@ -29,15 +29,6 @@ function App() {
         <Spinner />
       ) : (
         <BrowserRouter>
-          <div className="relative h-screen overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center w-full h-full sm:w-full sm:h-full "
-              style={{ backgroundImage: `url(${Background})` }}
-            >
-             
-            </div>
-            <div className="relative z-10 h-full overflow-y-auto">
-          
               <Navbar />
               <Routes>
                 <Route
@@ -49,15 +40,13 @@ function App() {
                       <Sponsor />
                       <Memories />
                       <Event />
+                      <BestSellers />
                     </>
                   }
                 />
                 <Route path="/event" element={<EventPage />} />
               </Routes>
-              <BestSellers />
               <Footer />
-            </div>
-          </div>
         </BrowserRouter>
       )}
     </>
