@@ -8,9 +8,9 @@ import { companyLinks, usefulLinks } from '../../data/footer'
 function Footer() {
   return (
     <>
-      <footer className='py-5 px-4 bg-slate-800 text-white'>
-        <div className='container mx-auto max-w-6xl relative'>
-          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+      <footer className='p-4 py-3  bg-slate-800 text-white'>
+        <div className='container mx-auto max-w-6xl relative mt-4'>
+          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12'>
             {/* Column 1 */}
             <Intro />
             {/* Column 2 */}

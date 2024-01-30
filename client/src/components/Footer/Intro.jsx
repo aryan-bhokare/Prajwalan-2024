@@ -7,7 +7,7 @@ import {
   AiFillGithub,
 } from 'react-icons/ai'
 import { SiHashnode } from 'react-icons/si'
-
+import prajwalanImage from '../../assets/prajwalan.jpg'
 function Intro() {
   const styles = {
     socialIcon:
@@ -16,11 +16,12 @@ function Intro() {
   return (
     <>
       {/* Flex Container */}
-      <div className='md:col-span-3 lg:col-span-1 flex flex-col space-y-4 justify-start text-white'>
+      <div className='md:col-span-3 lg:col-span-1 flex flex-col space-y-4 justify-start  text-white'>
         {/* Logo */}
         <div className='flex items-center space-x-2'>
-          <AiOutlineRadarChart size={35} />
-          <h3 className='text-lg font-bold uppercase'>Prajwalan.</h3>
+          {/* <AiOutlineRadarChart size={35} /> */}
+          <img src={prajwalanImage} alt='Prajwalan Logo' className='w-10 h-10 rounded-full mr-2 sm:mr-2 '></img>
+          <h3 className='text-lg font-bold uppercase '>   Prajwalan.</h3>
         </div>
         {/* Intro */}
         <p className='text-slate-300 '>
