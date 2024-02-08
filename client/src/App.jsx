@@ -37,10 +37,10 @@ function App() {
                     <>
                       <Hero />
                       <Countdown targetDate={targetDate} />
-                      <Sponsor />
+                      {/* <Sponsor /> */}
                       <Memories />
                       <Event />
-                      <BestSellers />
+                      {/* <BestSellers /> */}
                     </>
                   }
                 />
