@@ -18,7 +18,7 @@ function EventCard(props) {
   };
 
   return (
-    <div className={`card-container w-80 rounded-lg h-72 text-center overflow-hidden`} style={{ backdropFilter: 'blur(5px)', background: 'radial-gradient(100% 100% at 0 0, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.1) 100%), linear-gradient(169.15deg, rgba(255, 255, 255, 0.2), rgba(238, 238, 238, 0.09) 96.79%)' }}>
+<div className={`card-container w-80 rounded-lg h-72 text-center overflow-hidden`} style={{ background: 'radial-gradient(100% 100% at 0 0, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.1) 100%), linear-gradient(169.15deg, rgba(255, 255, 255, 0.2), rgba(238, 238, 238, 0.09) 96.79%)',WebkitBackdropFilter: 'blur(5px)',backdropFilter: 'blur(5px)'}}>
       <motion.div
         onClick={() => setIsOpen(!isOpen)}
         layout
