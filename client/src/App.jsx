@@ -35,12 +35,12 @@ function App() {
                   path="/"
                   element={
                     <>
-                      <Hero />
+                      {/* <Hero /> */}
                       <Countdown targetDate={targetDate} />
-                      {/* <Sponsor /> */}
+                      <Sponsor />
                       <Memories />
                       <Event />
-                      {/* <BestSellers /> */}
+                      <BestSellers />
                     </>
                   }
                 />
