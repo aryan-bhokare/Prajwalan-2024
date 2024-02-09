@@ -10,10 +10,10 @@ const companyLinks = {
 const usefulLinks = {
   title: 'Useful Links',
   links: [
-    'GCOEA',
-    'GCOEA',
-    'GCOEA',
-    'GCOEA',
+    'Customer Support',
+    'Terms Of Service',
+    'Privacy Policy',
+    'Cancellation & Refund Policy',
   ],
 }
 
