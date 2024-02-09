@@ -18,7 +18,7 @@ function EventCard(props) {
   };
 
   return (
-    <div className={`card-container w-80 rounded-lg h-80 text-center overflow-hidden  backdrop-blur-sm bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,0%,60%,0)], bg-gradient-to-br from-[hsla(0,0%,50%,0.2)] to-[hsla(0,3%,93%,0.2)]`}>
+    <div className={`card-container w-80 rounded-lg h-72 text-center overflow-hidden`} style={{ backdropFilter: 'blur(5px)', background: 'radial-gradient(100% 100% at 0 0, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.1) 100%), linear-gradient(169.15deg, rgba(255, 255, 255, 0.2), rgba(238, 238, 238, 0.09) 96.79%)' }}>
       <motion.div
         onClick={() => setIsOpen(!isOpen)}
         layout
@@ -26,7 +26,7 @@ function EventCard(props) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         style={{
-          marginTop: !isOpen ? '6em' : '0',
+          marginTop: !isOpen ? '5em' : '0',
           marginLeft: !isOpen ? '1em' : '0',
           marginRight: !isOpen ? '1em' : '0'
         }}
