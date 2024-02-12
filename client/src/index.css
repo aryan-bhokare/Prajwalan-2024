@@ -1,18 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @font-face {
-  font-family: Share Tech Mono;
-  src: url(./assets/ShareTechMono-Regular.ttf);
-}
+  font-family: 'Switzer-Bold';
+  src: url('./assets/Switzer-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+} */
 
 html{
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background-image: url('./assets/bgm2.jpg');
+  font-family: 'Clash Display', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  background-image: url('./assets/bgm4.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  backdrop-filter: blur(1.5px);
+}
+
+h4,h5,h6,p{
+  font-family: 'Archivo', sans-serif !important;
 }
