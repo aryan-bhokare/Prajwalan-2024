@@ -22,12 +22,12 @@ function Memories(){
             >
             Memories
             </motion.h1>
-            <motion.h2
+            <motion.p
               variants={childVariants}
               className='text-slate-400 max-w-lg font-bold text-center'
             >
               Memories of past Prajwalan.
-            </motion.h2>
+            </motion.p>
           </motion.div>
           <div className="flex justify-center">
           <MyImageCarousel />

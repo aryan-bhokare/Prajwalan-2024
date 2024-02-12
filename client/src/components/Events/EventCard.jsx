@@ -7,10 +7,10 @@ function EventCard(props) {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const styles = {
-    btn: 'px-5 my-5 rounded-md font-medium border-indigo-600 py-2 bg-indigo-600 hover:bg-indigo-700 hover:border-indigo-700',
-    navLink: 'hover:text-indigo-600 duration-200 ease-in-out',
+    btn: 'px-5 my-5 text-white rounded-md font-medium border-indigo-600 py-2 bg-indigo-600 hover:bg-indigo-700 hover:border-indigo-700',
+    navLink: 'text-white hover:text-indigo-600 duration-200 ease-in-out',
     mobileNavLink:
-      'hover:text-indigo-600 duration-200 ease-in-out border-b border-white  text-center',
+      'text-white hover:text-indigo-600 duration-200 ease-in-out border-b border-white  text-center',
   }
   const eventDetails = {...props};
   const handleReadMoreClick = () => {
@@ -45,7 +45,15 @@ function EventCard(props) {
           <motion.p>
             {eventDetails.description}
           </motion.p>
-          <button onClick={handleReadMoreClick} className={styles.btn}>Read More</button>
+          <button onClick={handleReadMoreClick} id='b1' className="relative inline-flex my-4 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300">
+    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+        Read More
+    </span>
+</button>
+
+
+
+
         </motion.div>
       </motion.div>
     </div>

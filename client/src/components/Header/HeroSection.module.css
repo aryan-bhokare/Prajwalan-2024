@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding-bottom: 15px;
+
     user-select: none;
     transform: translate3d(0, 0, 0);
     will-change: transform;
@@ -46,6 +46,31 @@
     white-space: pre;
   }
   
+  /* HeroSection.module.css */
+
+.registerButton {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Spacing and Size */
+  padding: 1rem 2rem;
+  /* Background and Text Color */
+  background-color: #000; /* Blue */
+  color: white;
+  /* Border and Border Radius */
+  border: none;
+  border-radius: 0.5rem;
+  /* Hover Effects */
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: wheat; /* Darker Blue on Hover */
+}
+
+
   .heroScrollTextContainer {
     color: white;
     padding-top: 0.4em;
@@ -53,9 +78,17 @@
     display: flex;
     white-space: nowrap;
     will-change: transform;
-    animation: scrollText 8s linear infinite;
+    animation: scrollText 3s linear infinite;
   }
-  
+  .heroScrollTextContainertwo {
+    color: white;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scrollText 3s linear infinite reverse;
+  }
 
   @keyframes scrollText  {
     from { transform: translateX(0); }
@@ -78,7 +111,7 @@
   .backgroundImageI {
     z-index: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
   }
   
   @media screen and (max-width: 767px) {

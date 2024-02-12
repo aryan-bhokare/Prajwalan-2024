@@ -49,9 +49,9 @@ function Navbar() {
               className='hidden lg:flex space-x-6 text-sm items-center'
             >
              <NavLink to='/'>Home</NavLink>
-             <AnchorLink href='#events' className={styles.navLink}>Events</AnchorLink>
-             <AnchorLink href='#memories' className={styles.navLink}>Memories</AnchorLink>
-             <AnchorLink href='#sponsors' className={styles.navLink}>Sponsors</AnchorLink>
+             <AnchorLink href='#events' className={styles.navLink}><p>Events</p></AnchorLink>
+             <AnchorLink href='#memories' className={styles.navLink}><p>Memories</p></AnchorLink>
+             <AnchorLink href='#sponsors' className={styles.navLink}><p>Sponsors</p></AnchorLink>
              <AnchorLink href='#' className={styles.navLink}>About us</AnchorLink>
               {/* <button className={styles.btn}>Register</button> */}
             </motion.div>
@@ -79,13 +79,13 @@ function Navbar() {
                 >
                   <motion.div
                     variants={mobileFlexContainer}
-                    className='flex flex-col items-center space-y-6 '
+                    className='flex flex-col items-center space-y-6 z-10'
                   >  
-                    <AnchorLink href='#home' className={styles.mobileNavLink}>Home</AnchorLink>
-                    <AnchorLink href='#events' className={styles.mobileNavLink}>Events</AnchorLink>
-                    <AnchorLink href='#memories' className={styles.mobileNavLink}>Memories</AnchorLink>
-                    <AnchorLink href='#sponsors' className={styles.mobileNavLink}>Sponsors</AnchorLink>
-                    <AnchorLink href='#' className={styles.mobileNavLink}>About us</AnchorLink>
+                    <AnchorLink href='#home' className={styles.mobileNavLink}><p>Home</p></AnchorLink>
+                    <AnchorLink href='#events' className={styles.mobileNavLink}><p>Events</p></AnchorLink>
+                    <AnchorLink href='#memories' className={styles.mobileNavLink}><p>Memories</p></AnchorLink>
+                    <AnchorLink href='#sponsors' className={styles.mobileNavLink}><p>Sponsors</p></AnchorLink>
+                    <AnchorLink href='#' className={styles.mobileNavLink}><p>About us</p></AnchorLink>
                   </motion.div>
                 </motion.div>
               )}

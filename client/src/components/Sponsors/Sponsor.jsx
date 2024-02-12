@@ -20,7 +20,7 @@ function Sponsor() {
             {/* Content */}
             <motion.h1
               variants={childVariants}
-              className='text-2xl md:text-3xl font-medium items-center'
+              className='text-2xl md:text-3xl  items-center'
             >
               Sponsors
             </motion.h1>

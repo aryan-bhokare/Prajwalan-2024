@@ -21,34 +21,34 @@ function Event() {
             >
             Events
             </motion.h1>
-            <motion.h1
+            <motion.h2
               variants={childVariants}
               className='text-slate-400 text-xl md:text-2xl font-thin pt-2 pl-14'
             >
             List of Events we are conducting this year.
-            </motion.h1>
-            <motion.p
+            </motion.h2>
+            <motion.h1
               variants={childVariants}
-              className=' max-w-lg text-center p-2'
+              className='text-xl text-center p-2'
             >
               Workshops
-            </motion.p>
+            </motion.h1>
             <EventList />
 
-            <motion.p
+            <motion.h1
               variants={childVariants}
-              className=' max-w-lg text-center p-2'
+              className=' text-xl text-center p-2'
             >
               Technical Events
-            </motion.p>
+            </motion.h1>
             <EventList />
 
-            <motion.p
+            <motion.h1
               variants={childVariants}
-              className=' max-w-lg text-center p-2'
+              className=' text-xl text-center p-2'
             >
               Non-technical Events
-            </motion.p>
+            </motion.h1>
             <EventList />
 
           </motion.div>
