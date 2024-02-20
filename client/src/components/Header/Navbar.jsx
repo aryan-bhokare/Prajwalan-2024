@@ -41,7 +41,7 @@ function Navbar() {
               variants={childVariants}
               className='text-2xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400'
             >
-              <span className=''>PRAJWALAN</span>
+              <span className=''>PRAJWALAN' 24</span>
             </motion.h1>
             {/* Menu Items */}
             <motion.div
@@ -53,6 +53,7 @@ function Navbar() {
              <AnchorLink href='#memories' className={styles.navLink}><p>Memories</p></AnchorLink>
              <AnchorLink href='#sponsors' className={styles.navLink}><p>Sponsors</p></AnchorLink>
              <AnchorLink href='#' className={styles.navLink}>About us</AnchorLink>
+             <AnchorLink href='#esummit' className={styles.navLink}>E-Summit</AnchorLink>
               {/* <button className={styles.btn}>Register</button> */}
             </motion.div>
             {/* Hamburger Menu */}

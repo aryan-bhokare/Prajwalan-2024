@@ -26,37 +26,37 @@ function App() {
 
     return () => clearTimeout(timeoutId);
   }, []);
-
-  const targetDate = new Date(2024, 1, 28, 12, 0, 0);
+  // console.log(process.env.REACT_APP_SUPABASE_API)
+  const targetDate = new Date(2024, 2, 12, 10, 0, 0)
   return (
     <>
       {loading ? (
         <Spinner />
       ) : (
         <BrowserRouter>
-              <Navbar />
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <>
-                      <Hero />
-                      <Countdown targetDate={targetDate} />
-                      <Memories />
-                      <Event />
-                      <Sponsor />
-                      <BestSellers /> 
-                    </>
-                  }
-                />
-                <Route path="/event" element={<EventPage />} />
-                <Route path="/support" element={<CustomerSupport/>}/>
-                <Route path="/service" element ={<Termsofservice/>}/>
-                <Route path='/policy' element={<Privacypolicy/>}/>
-                <Route path='/refund' element={<Cancellationrefund/>}/> 
-              </Routes>
-              
-              <Footer />
+          <Navbar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Countdown targetDate={targetDate} />
+                  {/* <Memories /> */}
+                  <Event />
+                  <Sponsor />
+                  {/* <BestSellers /> */}
+                </>
+              }
+            />
+            <Route path="/event" element={<EventPage />} />
+            <Route path="/support" element={<CustomerSupport />} />
+            <Route path="/service" element={<Termsofservice />} />
+            <Route path='/policy' element={<Privacypolicy />} />
+            <Route path='/refund' element={<Cancellationrefund />} />
+          </Routes>
+
+          <Footer />
         </BrowserRouter>
       )}
     </>

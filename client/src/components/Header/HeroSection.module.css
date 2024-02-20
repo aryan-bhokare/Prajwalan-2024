@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
+  z-index:-11;
     user-select: none;
     transform: translate3d(0, 0, 0);
     will-change: transform;
