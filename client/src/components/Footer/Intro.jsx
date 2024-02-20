@@ -25,11 +25,11 @@ function Intro() {
         </div>
         {/* Intro */}
         <p className='text-slate-300 '>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, incidunt deleniti ex aliquam nam maxime ducimus perspiciatis veniam quam ab recusandae unde facere vitae reprehenderit exercitationem magnam numquam porro dolorem! 
+          Prajwalan'24 - Central India's Biggest Technical Event
         </p>
         {/* Social Icons */}
         <div className='flex space-x-2 cursor-pointer'>
-        <a href="https://www.instagram.com/prajwalan.techfest/?hl=en" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/techfest.prajwalan24_gcoea/" target="_blank" rel="noopener noreferrer">
           <div className={styles.socialIcon}>
             <AiOutlineInstagram />
            </div>

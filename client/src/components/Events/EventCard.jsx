@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import sty from './EventCard.module.css'
 
 function EventCard(props) {
+
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const styles = {
@@ -15,7 +16,7 @@ function EventCard(props) {
   const eventDetails = {...props};
   const handleReadMoreClick = () => {
     // Navigate to the event page and pass props
-    navigate('/event', { state: eventDetails });
+    navigate('event?event-name='+eventDetails?.event_name);
   };
 
   return (
@@ -23,7 +24,7 @@ function EventCard(props) {
       <motion.div
         onClick={() => setIsOpen(!isOpen)}
         layout
-        className="border-2 border-white p-10 rounded-lg bg-white text-black "
+        className="border-2 border-white p-5 rounded-lg bg-white text-black "
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         style={{
@@ -33,7 +34,8 @@ function EventCard(props) {
         }}
       >
         <motion.h2 className='text-lg font-bold'>
-        {eventDetails.eventTitle}
+          <motion.img style={{maxWidth:"50%",margin:"auto",padding:"2rem 0"}} src={eventDetails.logo} alt={eventDetails.event_name} />
+        {eventDetails.event_name}
         </motion.h2>
         <motion.div
           initial={false}
@@ -43,11 +45,12 @@ function EventCard(props) {
           className={`h-${isOpen ? '80' : ''} pt-5`}
         > 
           <motion.p>
-            {eventDetails.description}
+            {(eventDetails.intro).slice(0,75)+"..."}
           </motion.p>
-          <button onClick={handleReadMoreClick} id='b1' className="relative inline-flex my-4 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300">
+          
+          <button disabled={eventDetails.desc == null?true:false} onClick={handleReadMoreClick} id='b1' className="relative inline-flex my-4 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300">
     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-        Read More
+        {eventDetails.desc == null?"Coming Soon":"Read More"}
     </span>
 </button>
 

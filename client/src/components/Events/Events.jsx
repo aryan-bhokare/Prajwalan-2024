@@ -33,7 +33,7 @@ function Event() {
             >
               Workshops
             </motion.h1>
-            <EventList />
+            <EventList category="Workshop" />
 
             <motion.h1
               variants={childVariants}
@@ -41,7 +41,7 @@ function Event() {
             >
               Technical Events
             </motion.h1>
-            <EventList />
+            <EventList category="Technical"/>
 
             <motion.h1
               variants={childVariants}
@@ -49,7 +49,14 @@ function Event() {
             >
               Non-technical Events
             </motion.h1>
-            <EventList />
+            <EventList category="Non Technical"/>
+            <motion.h1 id='esummit'
+              variants={childVariants}
+              className=' text-xl text-center p-2'
+            >
+              E-Summit
+            </motion.h1>
+            <EventList category="E-Sammelan"/>
 
           </motion.div>
           {/* Events List */}

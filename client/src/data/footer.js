@@ -3,8 +3,7 @@ const companyLinks = {
   links: [
     'About Us',
     'Team',
-    'Project',
-    'Blog',
+    'GCOEA',
   ],
 }
 const usefulLinks = {
