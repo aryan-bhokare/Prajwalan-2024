@@ -1,68 +1,54 @@
-import nft1 from '../assets/nfts/nft1.jpg'
-import nft2 from '../assets/nfts/nft2.jpg'
-import nft3 from '../assets/nfts/nft3.jpg'
-import nft4 from '../assets/nfts/nft4.jpg'
-import nft5 from '../assets/nfts/nft5.jpg'
-import nft6 from '../assets/nfts/nft6.jpg'
-import nft7 from '../assets/nfts/nft7.jpg'
-import nft8 from '../assets/nfts/nft8.jpg'
+import img1 from "../assets/Prajwalan-memories/1.webp";
+import img2 from "../assets/Prajwalan-memories/2.webp";
+import img3 from "../assets/Prajwalan-memories/3.webp";
+import img4 from "../assets/Prajwalan-memories/4.webp";
+import img5 from "../assets/Prajwalan-memories/5.webp";
+import img6 from "../assets/Prajwalan-memories/6.webp";
+
 
 const nfts = [
   {
-    img: nft1,
+    img: img1,
     title: 'Deep Sea Phantasy',
     price: '20.5',
     likes: '22',
     sale: true,
   },
   {
-    img: nft2,
+    img: img2,
     title: 'CyberPrimal 042 LAN',
     price: '40.5',
     likes: '220',
     sale: false,
   },
   {
-    img: nft3,
+    img: img3,
     title: 'Crypto Egg Stamp',
     price: '10.5',
     likes: '122',
     sale: false,
   },
   {
-    img: nft4,
+    img: img4,
     title: 'Color Abstract Painting',
     price: '4.3',
     likes: '54',
     sale: false,
   },
   {
-    img: nft5,
+    img: img5,
     title: 'Liquid Forest Princess',
     price: '2.9',
     likes: '99',
     sale: false,
   },
   {
-    img: nft6,
+    img: img6,
     title: 'Spider Eyes Modern Art',
     price: '7.7',
     likes: '73',
     sale: false,
   },
-  {
-    img: nft7,
-    title: 'Synthwave Painting',
-    price: '3.4',
-    likes: '43',
-    sale: false,
-  },
-  {
-    img: nft8,
-    title: 'Contemporary Abstract',
-    price: '30.2',
-    likes: '91',
-    sale: false,
-  },
+
 ]
 export default nfts

@@ -5,6 +5,7 @@ import {config} from 'dotenv'
 import { createClient } from '@supabase/supabase-js'
 import { childVariants, parentVariants } from '../../animations/common'
 import { motion } from 'framer-motion'
+import NFTCard from './NFTCard'
 
 function EventList(props) {
   // config()
@@ -53,7 +54,7 @@ function EventList(props) {
           {events.map((event, idx) => {
             return (
               <motion.div variants={childVariants} key={idx}>
-                <EventCard
+                <NFTCard
                   {...event}
                 />
               </motion.div>

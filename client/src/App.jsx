@@ -14,8 +14,7 @@ import CustomerSupport from './components/CustomerSupport/customerSupport';
 import Termsofservice from './components/TermsOfService/termsofservice';
 import Privacypolicy from './components/PrivacyPolicy/privacypolicy';
 import Cancellationrefund from './components/CancellationRefund/cancellationrefund';
-
-import Background from '../src/assets/bgm.jpg';
+import HotProducts from './components/HotProducts/HotProducts'
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -42,7 +41,7 @@ function App() {
                 <>
                   <Hero />
                   <Countdown targetDate={targetDate} />
-                  {/* <Memories /> */}
+                  <Memories />
                   <Event />
                   <Sponsor />
                   {/* <BestSellers /> */}

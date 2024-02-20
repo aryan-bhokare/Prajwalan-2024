@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import sty from './EventCard.module.css'
+
 
 function EventCard(props) {
 
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
-  const styles = {
-    btn: 'px-5 my-5 text-white rounded-md font-medium border-indigo-600 py-2 bg-indigo-600 hover:bg-indigo-700 hover:border-indigo-700',
-    navLink: 'text-white hover:text-indigo-600 duration-200 ease-in-out',
-    mobileNavLink:
-      'text-white hover:text-indigo-600 duration-200 ease-in-out border-b border-white  text-center',
-  }
+
   const eventDetails = {...props};
   const handleReadMoreClick = () => {
     // Navigate to the event page and pass props
@@ -48,8 +43,12 @@ function EventCard(props) {
             {(eventDetails.intro).slice(0,75)+"..."}
           </motion.p>
           
-          <button disabled={eventDetails.desc == null?true:false} onClick={handleReadMoreClick} id='b1' className="relative inline-flex my-4 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-300">
-    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+          <button
+    disabled={eventDetails.desc == null ? true : false}
+    onClick={handleReadMoreClick}
+    id='b1'
+    className="relative inline-flex my-4 items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group hover:bg-gradient-to-br hover:from-blue-500 hover:to-purple-600 hover:text-white bg-gradient-to-br from-purple-600 to-blue-500 focus:ring-2 focus:outline-none focus:ring-blue-300"
+>   <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
         {eventDetails.desc == null?"Coming Soon":"Read More"}
     </span>
 </button>

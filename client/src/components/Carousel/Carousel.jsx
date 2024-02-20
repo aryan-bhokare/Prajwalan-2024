@@ -3,15 +3,16 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
-import img1 from "../../assets/Prajwalan-memories/1.png";
-import img2 from "../../assets/Prajwalan-memories/2.png";
-import img3 from "../../assets/Prajwalan-memories/3.png";
-import img4 from "../../assets/Prajwalan-memories/4.jpg";
-import img5 from "../../assets/Prajwalan-memories/5.png";
-import img6 from "../../assets/Prajwalan-memories/6.png";
+import img1 from "../../assets/Prajwalan-memories/1.webp";
+import img2 from "../../assets/Prajwalan-memories/2.webp";
+import img3 from "../../assets/Prajwalan-memories/3.webp";
+import img4 from "../../assets/Prajwalan-memories/4.webp";
+import img5 from "../../assets/Prajwalan-memories/5.webp";
+import img6 from "../../assets/Prajwalan-memories/6.webp";
+import img7 from "../../assets/Prajwalan-memories/7.webp";
 
 const MyImageCarousel = () => {
-  const slides = [img1, img2, img3, img4, img5, img6];
+  const slides = [img1, img2, img3, img4, img5, img6,img7];
   const [current, setCurrent] = useState(0);
 
   const previousSlide = () => {
@@ -23,7 +24,7 @@ const MyImageCarousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 4000); 
+    const interval = setInterval(nextSlide, 3000); 
     return () => clearInterval(interval);
   }, []);
 
