@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // import events from '../../data/eventdata'
-import EventCard from './EventCard'
+// import EventCard from './EventCard'
 import {config} from 'dotenv'
 import { createClient } from '@supabase/supabase-js'
 import { childVariants, parentVariants } from '../../animations/common'

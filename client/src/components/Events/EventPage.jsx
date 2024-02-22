@@ -63,10 +63,14 @@ function EventPage(props) {
                     <div className={styles.info}>
                         <h3 className="text-blue-500 text-lg my-1 font-bold"><span>Description</span></h3>
                         <p className="text-white my-1 ">{`${eventDetails.desc}`}</p>
+                        <p className="text-blue-500 text-lg mt-4 font-bold">Pre Requisites</p>
+                        <p className="text-white my-1">{eventDetails.pre_req}</p>
+                        <p className="text-blue-500 text-lg mt-4 font-bold">Other Info</p>
+                        <p className="text-white my-1">{eventDetails.other_info}</p>
                         <p className="text-blue-500 text-lg mt-4 font-bold">Entry Fees</p>
                         <p className="text-white my-1">{`Rs. ${eventDetails.fee} per team`}</p>
                         <p className="text-blue-500 text-lg mt-4 font-bold">Deadline</p>
-                        {/* <p className="text-white my-1">25 February 2024</p> */}
+                        <p className="text-white my-1">{returnDate(eventDetails.deadline)}</p>
                         <p className="text-blue-500 text-lg mt-4 font-bold">Event Date and Time</p>
                         <p className="text-white my-1">{returnDate(eventDetails.date) + " - " + eventDetails.time}</p>
                         <p className="text-blue-500 text-lg mt-4 font-bold">Venue</p>
@@ -76,16 +80,17 @@ function EventPage(props) {
                 </div>
             </div>
             <hr style={{ display: 'block', width: "100%", marginLeft: 'auto', marginRight: 'auto' }} className='my-5' />
-            {/* <div className={styles.rules} style={{ marginBottom: "30px" }}>
+            <div className={styles.rules} style={{ marginBottom: "30px" }}>
                 <h1 className='text-white text-xl my-4 font-bold'>Rules and Regulations</h1>
                 <ul className="text-white">
                     
-                        {eventDetails.rules?.map((rule, i) => (
+                        {/* {eventDetails.rules?.map((rule, i) => (
                             <li key={i}>{rule}</li>
-                        ))}
+                        ))} */}
+                    {eventDetails.rules}
                     
                 </ul>
-            </div> */}
+            </div>
             <div />
         </div>
     )
