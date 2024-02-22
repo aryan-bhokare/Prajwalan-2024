@@ -8,8 +8,10 @@ function EventPage(props) {
     const location = useLocation();
     const [isLoading, setIsLoading] = useState(true)
     const [eventDetails, setEvents] = useState([])
-    const SUPABASE_API = import.meta.env.VITE_SUPABASE_API
-    const PROJECT_URL = import.meta.env.VITE_PROJECT_URL
+    // const SUPABASE_API = import.meta.env.VITE_SUPABASE_API
+    // const PROJECT_URL = import.meta.env.VITE_PROJECT_URL
+    const SUPABASE_API = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6YWN5b3drc3p6cmhodmp0am96Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDcwMTYwODIsImV4cCI6MjAyMjU5MjA4Mn0.3DRS5AZAvnYLHSn_0Pcb3HTWiF8F30XFzddRaZ9_wKI"
+    const PROJECT_URL = "https://yzacyowkszzrhhvjtjoz.supabase.co"
     const supabaseAPI = SUPABASE_API
   const projectURL = PROJECT_URL
     // const eventDetails = location.state || {};
